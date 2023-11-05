@@ -1,0 +1,336 @@
+-- WARNING: All output lines starting with a double dash are there to show you
+-- how the simulation proceeds and are NEITHER REQUIRED NOR RECOMMENDED.
+-- Scheduling arrival of process 0 at time 3
+-- Scheduling arrival of process 1 at time 17
+-- Scheduling arrival of process 2 at time 29
+
+Process 0 starts at time 3 ms
+Current number of busy cores 0
+Process Table:
+Process 0 is READY.
+Ready queue is empty.
+
+-- Process 0 requests a core at time 3 ms for 200 ms.
+-- Process 0 gets a core at time 3 ms.
+-- Process 0 will release a core at time 203 ms.
+
+Process 1 starts at time 17 ms
+Current number of busy cores 1
+Process Table:
+Process 0 is RUNNING.
+Process 1 is READY.
+Ready queue is empty.
+
+-- Process 1 requests a core at time 17 ms for 100 ms.
+-- Process 1 must wait for a core.
+-- Ready queue now contains 1 process(es) waiting for a core.
+
+Process 2 starts at time 29 ms
+Current number of busy cores 1
+Process Table:
+Process 0 is RUNNING.
+Process 1 is READY.
+Process 2 is READY.
+Ready queue contains:
+Process 1
+
+-- Process 2 requests a core at time 29 ms for 200 ms.
+-- Process 2 must wait for a core.
+-- Ready queue now contains 2 process(es) waiting for a core.
+-- Process 0 releases a core at time 203 ms.
+-- Give core to process 1 from the ready queue.
+-- Ready queue now contains 1 process(s) waiting for a core.
+-- Process 1 will release a core at time 303 ms.
+-- Process 0 requests SSD access at time 203 ms for 250 ms.
+-- Process 0 is granted access to the SSD at time 203 ms.
+-- Process 0 will release the SSD at time 453 ms.
+-- Process 1 releases a core at time 303 ms.
+-- Give core to process 2 from the ready queue.
+-- Ready queue now contains 0 process(s) waiting for a core.
+-- Process 2 will release a core at time 503 ms.
+-- Process 1 requests SSD access at time 303 ms for 250 ms.
+-- Process 1 must wait for the SSD.
+-- SSD queue now contains 1 process(s) waiting for the ssd.
+-- Process 0 releases the SSD at time 453 ms.
+-- Give SSD to process 1 from the ssd queue.
+-- SSD queue now contains 0 process(s) waiting for the ssd.
+-- Process 1 will release the SSD at time 703 ms.
+-- Process 0 requests a core at time 453 ms for 100 ms.
+-- Process 0 must wait for a core.
+-- Ready queue now contains 1 process(es) waiting for a core.
+-- Process 2 releases a core at time 503 ms.
+-- Give core to process 0 from the ready queue.
+-- Ready queue now contains 0 process(s) waiting for a core.
+-- Process 0 will release a core at time 603 ms.
+-- Process 2 requests SSD access at time 503 ms for 250 ms.
+-- Process 2 must wait for the SSD.
+-- SSD queue now contains 1 process(s) waiting for the ssd.
+-- Process 0 releases a core at time 603 ms.
+-- Process 0 requests SSD access at time 603 ms for 250 ms.
+-- Process 0 must wait for the SSD.
+-- SSD queue now contains 2 process(s) waiting for the ssd.
+-- Process 1 releases the SSD at time 703 ms.
+-- Give SSD to process 2 from the ssd queue.
+-- SSD queue now contains 1 process(s) waiting for the ssd.
+-- Process 2 will release the SSD at time 953 ms.
+-- Process 1 requests a core at time 703 ms for 100 ms.
+-- Process 1 gets a core at time 703 ms.
+-- Process 1 will release a core at time 803 ms.
+-- Process 1 releases a core at time 803 ms.
+-- Process 1 requests lock 1 at time 803 ms.
+-- Process 1 gets lock 1 at time 803 ms.
+-- Process 1 requests a core at time 803 ms for 10 ms.
+-- Process 1 gets a core at time 803 ms.
+-- Process 1 will release a core at time 813 ms.
+-- Process 1 releases a core at time 813 ms.
+-- Process 1 requests SSD access at time 813 ms for 300 ms.
+-- Process 1 must wait for the SSD.
+-- SSD queue now contains 2 process(s) waiting for the ssd.
+-- Process 2 releases the SSD at time 953 ms.
+-- Give SSD to process 0 from the ssd queue.
+-- SSD queue now contains 1 process(s) waiting for the ssd.
+-- Process 0 will release the SSD at time 1203 ms.
+-- Process 2 requests a core at time 953 ms for 400 ms.
+-- Process 2 gets a core at time 953 ms.
+-- Process 2 will release a core at time 1353 ms.
+-- Process 0 releases the SSD at time 1203 ms.
+-- Give SSD to process 1 from the ssd queue.
+-- SSD queue now contains 0 process(s) waiting for the ssd.
+-- Process 1 will release the SSD at time 1503 ms.
+-- Process 0 requests a core at time 1203 ms for 100 ms.
+-- Process 0 must wait for a core.
+-- Ready queue now contains 1 process(es) waiting for a core.
+-- Process 2 releases a core at time 1353 ms.
+-- Give core to process 0 from the ready queue.
+-- Ready queue now contains 0 process(s) waiting for a core.
+-- Process 0 will release a core at time 1453 ms.
+-- Process 2 requests SSD access at time 1353 ms for 250 ms.
+-- Process 2 must wait for the SSD.
+-- SSD queue now contains 1 process(s) waiting for the ssd.
+-- Process 0 releases a core at time 1453 ms.
+-- Process 0 requests lock 1 at time 1453 ms.
+-- Process 0 must wait for the lock 1.
+-- Process 1 releases the SSD at time 1503 ms.
+-- Give SSD to process 2 from the ssd queue.
+-- SSD queue now contains 0 process(s) waiting for the ssd.
+-- Process 2 will release the SSD at time 1753 ms.
+-- Process 1 requests a core at time 1503 ms for 10 ms.
+-- Process 1 gets a core at time 1503 ms.
+-- Process 1 will release a core at time 1513 ms.
+-- Process 1 releases a core at time 1513 ms.
+-- Process 1 releases lock 1 at time 1513 ms.
+-- Grant lock 1 to waiting process 0.
+-- Process 1 requests a core at time 1513 ms for 200 ms.
+-- Process 1 gets a core at time 1513 ms.
+-- Process 1 will release a core at time 1713 ms.
+-- Process 0 requests a core at time 1513 ms for 10 ms.
+-- Process 0 must wait for a core.
+-- Ready queue now contains 1 process(es) waiting for a core.
+-- Process 1 releases a core at time 1713 ms.
+-- Give core to process 0 from the ready queue.
+-- Ready queue now contains 0 process(s) waiting for a core.
+-- Process 0 will release a core at time 1723 ms.
+-- Process 1 requests SSD access at time 1713 ms for 200 ms.
+-- Process 1 must wait for the SSD.
+-- SSD queue now contains 1 process(s) waiting for the ssd.
+-- Process 0 releases a core at time 1723 ms.
+-- Process 0 requests SSD access at time 1723 ms for 300 ms.
+-- Process 0 must wait for the SSD.
+-- SSD queue now contains 2 process(s) waiting for the ssd.
+-- Process 2 releases the SSD at time 1753 ms.
+-- Give SSD to process 1 from the ssd queue.
+-- SSD queue now contains 1 process(s) waiting for the ssd.
+-- Process 1 will release the SSD at time 1953 ms.
+-- Process 2 requests a core at time 1753 ms for 100 ms.
+-- Process 2 gets a core at time 1753 ms.
+-- Process 2 will release a core at time 1853 ms.
+-- Process 2 releases a core at time 1853 ms.
+-- Process 2 requests lock 2 at time 1853 ms.
+-- Process 2 gets lock 2 at time 1853 ms.
+-- Process 2 requests a core at time 1853 ms for 10 ms.
+-- Process 2 gets a core at time 1853 ms.
+-- Process 2 will release a core at time 1863 ms.
+-- Process 2 releases a core at time 1863 ms.
+-- Process 2 requests SSD access at time 1863 ms for 300 ms.
+-- Process 2 must wait for the SSD.
+-- SSD queue now contains 2 process(s) waiting for the ssd.
+-- Process 1 releases the SSD at time 1953 ms.
+-- Give SSD to process 0 from the ssd queue.
+-- SSD queue now contains 1 process(s) waiting for the ssd.
+-- Process 0 will release the SSD at time 2253 ms.
+-- Process 1 requests a core at time 1953 ms for 100 ms.
+-- Process 1 gets a core at time 1953 ms.
+-- Process 1 will release a core at time 2053 ms.
+-- Process 1 releases a core at time 2053 ms.
+-- Process 1 requests SSD access at time 2053 ms for 200 ms.
+-- Process 1 must wait for the SSD.
+-- SSD queue now contains 2 process(s) waiting for the ssd.
+-- Process 0 releases the SSD at time 2253 ms.
+-- Give SSD to process 2 from the ssd queue.
+-- SSD queue now contains 1 process(s) waiting for the ssd.
+-- Process 2 will release the SSD at time 2553 ms.
+-- Process 0 requests a core at time 2253 ms for 100 ms.
+-- Process 0 gets a core at time 2253 ms.
+-- Process 0 will release a core at time 2353 ms.
+-- Process 0 releases a core at time 2353 ms.
+-- Process 0 requests SSD access at time 2353 ms for 300 ms.
+-- Process 0 must wait for the SSD.
+-- SSD queue now contains 2 process(s) waiting for the ssd.
+-- Process 2 releases the SSD at time 2553 ms.
+-- Give SSD to process 1 from the ssd queue.
+-- SSD queue now contains 1 process(s) waiting for the ssd.
+-- Process 1 will release the SSD at time 2753 ms.
+-- Process 2 requests a core at time 2553 ms for 10 ms.
+-- Process 2 gets a core at time 2553 ms.
+-- Process 2 will release a core at time 2563 ms.
+-- Process 2 releases a core at time 2563 ms.
+-- Process 2 releases lock 2 at time 2563 ms.
+-- Process 2 requests a core at time 2563 ms for 200 ms.
+-- Process 2 gets a core at time 2563 ms.
+-- Process 2 will release a core at time 2763 ms.
+-- Process 1 releases the SSD at time 2753 ms.
+-- Give SSD to process 0 from the ssd queue.
+-- SSD queue now contains 0 process(s) waiting for the ssd.
+-- Process 0 will release the SSD at time 3053 ms.
+-- Process 1 requests a core at time 2753 ms for 300 ms.
+-- Process 1 must wait for a core.
+-- Ready queue now contains 1 process(es) waiting for a core.
+-- Process 2 releases a core at time 2763 ms.
+-- Give core to process 1 from the ready queue.
+-- Ready queue now contains 0 process(s) waiting for a core.
+-- Process 1 will release a core at time 3063 ms.
+-- Process 2 requests SSD access at time 2763 ms for 200 ms.
+-- Process 2 must wait for the SSD.
+-- SSD queue now contains 1 process(s) waiting for the ssd.
+-- Process 0 releases the SSD at time 3053 ms.
+-- Give SSD to process 2 from the ssd queue.
+-- SSD queue now contains 0 process(s) waiting for the ssd.
+-- Process 2 will release the SSD at time 3253 ms.
+-- Process 0 requests a core at time 3053 ms for 10 ms.
+-- Process 0 must wait for a core.
+-- Ready queue now contains 1 process(es) waiting for a core.
+-- Process 1 releases a core at time 3063 ms.
+-- Give core to process 0 from the ready queue.
+-- Ready queue now contains 0 process(s) waiting for a core.
+-- Process 0 will release a core at time 3073 ms.
+-- Process 1 starts I/O request at time 3063 ms for 10 ms.
+-- Process 1 will complete its I/O request at time 3073 ms.
+-- Process 0 releases a core at time 3073 ms.
+-- Process 0 releases lock 1 at time 3073 ms.
+-- Process 0 requests a core at time 3073 ms for 200 ms.
+-- Process 0 gets a core at time 3073 ms.
+-- Process 0 will release a core at time 3273 ms.
+-- Process 1 completes its I/O step at time 3073 ms.
+-- Process 1 requests a core at time 3073 ms for 20 ms.
+-- Process 1 must wait for a core.
+-- Ready queue now contains 1 process(es) waiting for a core.
+-- Process 2 releases the SSD at time 3253 ms.
+-- Process 2 requests a core at time 3253 ms for 100 ms.
+-- Process 2 must wait for a core.
+-- Ready queue now contains 2 process(es) waiting for a core.
+-- Process 0 releases a core at time 3273 ms.
+-- Give core to process 1 from the ready queue.
+-- Ready queue now contains 1 process(s) waiting for a core.
+-- Process 1 will release a core at time 3293 ms.
+-- Process 0 starts I/O request at time 3273 ms for 10 ms.
+-- Process 0 will complete its I/O request at time 3283 ms.
+-- Process 0 completes its I/O step at time 3283 ms.
+-- Process 0 requests a core at time 3283 ms for 10 ms.
+-- Process 0 must wait for a core.
+-- Ready queue now contains 2 process(es) waiting for a core.
+-- Process 1 releases a core at time 3293 ms.
+-- Give core to process 2 from the ready queue.
+-- Ready queue now contains 1 process(s) waiting for a core.
+-- Process 2 will release a core at time 3393 ms.
+-- Process 1 starts I/O request at time 3293 ms for 10 ms.
+-- Process 1 will complete its I/O request at time 3303 ms.
+-- Process 1 completes its I/O step at time 3303 ms.
+-- Process 1 requests a core at time 3303 ms for 50 ms.
+-- Process 1 must wait for a core.
+-- Ready queue now contains 2 process(es) waiting for a core.
+-- Process 2 releases a core at time 3393 ms.
+-- Give core to process 0 from the ready queue.
+-- Ready queue now contains 1 process(s) waiting for a core.
+-- Process 0 will release a core at time 3403 ms.
+-- Process 2 requests SSD access at time 3393 ms for 200 ms.
+-- Process 2 is granted access to the SSD at time 3393 ms.
+-- Process 2 will release the SSD at time 3593 ms.
+-- Process 0 releases a core at time 3403 ms.
+-- Give core to process 1 from the ready queue.
+-- Ready queue now contains 0 process(s) waiting for a core.
+-- Process 1 will release a core at time 3453 ms.
+
+Process 0 terminates at time 3403 ms.
+Current number of busy cores 1
+Process Table:
+Process 0 is TERMINATED.
+Process 1 is RUNNING.
+Process 2 is BLOCKED.
+Ready queue is empty.
+
+-- Process 1 releases a core at time 3453 ms.
+
+Process 1 terminates at time 3453 ms.
+Current number of busy cores 0
+Process Table:
+Process 1 is TERMINATED.
+Process 2 is BLOCKED.
+Ready queue is empty.
+
+-- Process 2 releases the SSD at time 3593 ms.
+-- Process 2 requests a core at time 3593 ms for 300 ms.
+-- Process 2 gets a core at time 3593 ms.
+-- Process 2 will release a core at time 3893 ms.
+-- Process 2 releases a core at time 3893 ms.
+-- Process 2 requests SSD access at time 3893 ms for 280 ms.
+-- Process 2 is granted access to the SSD at time 3893 ms.
+-- Process 2 will release the SSD at time 4173 ms.
+-- Process 2 releases the SSD at time 4173 ms.
+-- Process 2 requests a core at time 4173 ms for 400 ms.
+-- Process 2 gets a core at time 4173 ms.
+-- Process 2 will release a core at time 4573 ms.
+-- Process 2 releases a core at time 4573 ms.
+-- Process 2 requests SSD access at time 4573 ms for 200 ms.
+-- Process 2 is granted access to the SSD at time 4573 ms.
+-- Process 2 will release the SSD at time 4773 ms.
+-- Process 2 releases the SSD at time 4773 ms.
+-- Process 2 requests a core at time 4773 ms for 100 ms.
+-- Process 2 gets a core at time 4773 ms.
+-- Process 2 will release a core at time 4873 ms.
+-- Process 2 releases a core at time 4873 ms.
+-- Process 2 requests SSD access at time 4873 ms for 200 ms.
+-- Process 2 is granted access to the SSD at time 4873 ms.
+-- Process 2 will release the SSD at time 5073 ms.
+-- Process 2 releases the SSD at time 5073 ms.
+-- Process 2 requests a core at time 5073 ms for 300 ms.
+-- Process 2 gets a core at time 5073 ms.
+-- Process 2 will release a core at time 5373 ms.
+-- Process 2 releases a core at time 5373 ms.
+-- Process 2 starts I/O request at time 5373 ms for 10 ms.
+-- Process 2 will complete its I/O request at time 5383 ms.
+-- Process 2 completes its I/O step at time 5383 ms.
+-- Process 2 requests a core at time 5383 ms for 20 ms.
+-- Process 2 gets a core at time 5383 ms.
+-- Process 2 will release a core at time 5403 ms.
+-- Process 2 releases a core at time 5403 ms.
+-- Process 2 starts I/O request at time 5403 ms for 10 ms.
+-- Process 2 will complete its I/O request at time 5413 ms.
+-- Process 2 completes its I/O step at time 5413 ms.
+-- Process 2 requests a core at time 5413 ms for 20 ms.
+-- Process 2 gets a core at time 5413 ms.
+-- Process 2 will release a core at time 5433 ms.
+-- Process 2 releases a core at time 5433 ms.
+-- Process 2 starts I/O request at time 5433 ms for 10 ms.
+-- Process 2 will complete its I/O request at time 5443 ms.
+-- Process 2 completes its I/O step at time 5443 ms.
+-- Process 2 requests a core at time 5443 ms for 50 ms.
+-- Process 2 gets a core at time 5443 ms.
+-- Process 2 will release a core at time 5493 ms.
+-- Process 2 releases a core at time 5493 ms.
+
+Process 2 terminates at time 5493 ms.
+Current number of busy cores 0
+Process Table:
+Process 2 is TERMINATED.
+Ready queue is empty.
+

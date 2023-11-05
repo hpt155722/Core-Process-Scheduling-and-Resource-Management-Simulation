@@ -1,0 +1,55 @@
+-- WARNING: All output lines starting with a double dash are there to show you
+-- how the simulation proceeds and are NEITHER REQUIRED NOR RECOMMENDED.
+-- Scheduling arrival of process 0 at time 10
+
+Process 0 starts at time 10 ms
+Current number of busy cores 0
+Process Table:
+Process 0 is READY.
+Ready queue is empty.
+
+-- Process 0 requests a core at time 10 ms for 200 ms.
+-- Process 0 gets a core at time 10 ms.
+-- Process 0 will release a core at time 210 ms.
+-- Process 0 releases a core at time 210 ms.
+-- Process 0 requests lock 1 at time 210 ms.
+-- Process 0 gets lock 1 at time 210 ms.
+-- Process 0 requests a core at time 210 ms for 10 ms.
+-- Process 0 gets a core at time 210 ms.
+-- Process 0 will release a core at time 220 ms.
+-- Process 0 releases a core at time 220 ms.
+-- Process 0 requests SSD access at time 220 ms for 300 ms.
+-- Process 0 is granted access to the SSD at time 220 ms.
+-- Process 0 will release the SSD at time 520 ms.
+-- Process 0 releases the SSD at time 520 ms.
+-- Process 0 requests a core at time 520 ms for 100 ms.
+-- Process 0 gets a core at time 520 ms.
+-- Process 0 will release a core at time 620 ms.
+-- Process 0 releases a core at time 620 ms.
+-- Process 0 requests SSD access at time 620 ms for 300 ms.
+-- Process 0 is granted access to the SSD at time 620 ms.
+-- Process 0 will release the SSD at time 920 ms.
+-- Process 0 releases the SSD at time 920 ms.
+-- Process 0 requests a core at time 920 ms for 10 ms.
+-- Process 0 gets a core at time 920 ms.
+-- Process 0 will release a core at time 930 ms.
+-- Process 0 releases a core at time 930 ms.
+-- Process 0 releases lock 1 at time 930 ms.
+-- Process 0 requests a core at time 930 ms for 200 ms.
+-- Process 0 gets a core at time 930 ms.
+-- Process 0 will release a core at time 1130 ms.
+-- Process 0 releases a core at time 1130 ms.
+-- Process 0 starts I/O request at time 1130 ms for 10 ms.
+-- Process 0 will complete its I/O request at time 1140 ms.
+-- Process 0 completes its I/O step at time 1140 ms.
+-- Process 0 requests a core at time 1140 ms for 10 ms.
+-- Process 0 gets a core at time 1140 ms.
+-- Process 0 will release a core at time 1150 ms.
+-- Process 0 releases a core at time 1150 ms.
+
+Process 0 terminates at time 1150 ms.
+Current number of busy cores 0
+Process Table:
+Process 0 is TERMINATED.
+Ready queue is empty.
+

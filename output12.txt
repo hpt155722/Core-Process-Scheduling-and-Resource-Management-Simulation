@@ -1,0 +1,64 @@
+-- WARNING: All output lines starting with a double dash are there to show you
+-- how the simulation proceeds and are NEITHER REQUIRED NOR RECOMMENDED.
+-- Scheduling arrival of process 0 at time 10
+-- Scheduling arrival of process 1 at time 50
+
+Process 0 starts at time 10 ms
+Current number of busy cores 0
+Process Table:
+Process 0 is READY.
+Ready queue is empty.
+
+-- Process 0 requests a core at time 10 ms for 200 ms.
+-- Process 0 gets a core at time 10 ms.
+-- Process 0 will release a core at time 210 ms.
+
+Process 1 starts at time 50 ms
+Current number of busy cores 1
+Process Table:
+Process 0 is RUNNING.
+Process 1 is READY.
+Ready queue is empty.
+
+-- Process 1 requests a core at time 50 ms for 200 ms.
+-- Process 1 must wait for a core.
+-- Ready queue now contains 1 process(es) waiting for a core.
+-- Process 0 releases a core at time 210 ms.
+-- Give core to process 1 from the ready queue.
+-- Ready queue now contains 0 process(s) waiting for a core.
+-- Process 1 will release a core at time 410 ms.
+-- Process 0 requests SSD access at time 210 ms for 300 ms.
+-- Process 0 is granted access to the SSD at time 210 ms.
+-- Process 0 will release the SSD at time 510 ms.
+-- Process 1 releases a core at time 410 ms.
+-- Process 1 requests SSD access at time 410 ms for 300 ms.
+-- Process 1 must wait for the SSD.
+-- SSD queue now contains 1 process(s) waiting for the ssd.
+-- Process 0 releases the SSD at time 510 ms.
+-- Give SSD to process 1 from the ssd queue.
+-- SSD queue now contains 0 process(s) waiting for the ssd.
+-- Process 1 will release the SSD at time 810 ms.
+-- Process 0 requests a core at time 510 ms for 250 ms.
+-- Process 0 gets a core at time 510 ms.
+-- Process 0 will release a core at time 760 ms.
+-- Process 0 releases a core at time 760 ms.
+
+Process 0 terminates at time 760 ms.
+Current number of busy cores 0
+Process Table:
+Process 0 is TERMINATED.
+Process 1 is BLOCKED.
+Ready queue is empty.
+
+-- Process 1 releases the SSD at time 810 ms.
+-- Process 1 requests a core at time 810 ms for 100 ms.
+-- Process 1 gets a core at time 810 ms.
+-- Process 1 will release a core at time 910 ms.
+-- Process 1 releases a core at time 910 ms.
+
+Process 1 terminates at time 910 ms.
+Current number of busy cores 0
+Process Table:
+Process 1 is TERMINATED.
+Ready queue is empty.
+
