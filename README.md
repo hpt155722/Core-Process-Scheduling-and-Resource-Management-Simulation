@@ -4,19 +4,17 @@ A simulation program for process scheduling and synchronization in a time-shared
 
 <br>
 
-### ☆ ───── Technologies ───── ☆
+### ☆ ──── Technologies ──── ☆
 
+• C++ <br>
+• Input redirection <br>
 <br>
-☆ C++ <br>
-☆ Input redirection <br>
+
+### ☆ ──── Features ──── ☆
+
+• **Core Scheduling:** Implements a First Come-First Served policy for scheduling core usage, managing processes in a FIFO ready queue.
 <br>
-
-### ☆ ───── Features ───── ☆
-
- <br>
-☆ Core Scheduling: Implements a First Come-First Served policy for scheduling core usage, managing processes in a FIFO ready queue. <br>
-☆ SSD Scheduling: Handles SSD accesses in mutual exclusion following a First Come-First Served policy, similar to core scheduling. <br>
-☆ Lock Management: Manages a set of 64 locks, allowing processes to access critical shared resources in mutual exclusion. <br>
-☆ Detailed Output: Provides detailed summary reports at each process start or termination, including current simulated time, process sequence number, busy core count, ready queue contents, and process states (READY, RUNNING, BLOCKED, TERMINATED) for processes in main memory. <br>
-
- <br>
+• **SSD Scheduling:** Handles SSD accesses in mutual exclusion following a First Come-First Served policy, similar to core scheduling. <br>
+• **Lock Management:** Manages a set of 64 locks, allowing processes to access critical shared resources in mutual exclusion. <br>
+• **Detailed Output:** Provides detailed summary reports at each process start or termination, including current simulated time, process sequence number, busy core count, ready queue contents, and process states (READY, RUNNING, BLOCKED, TERMINATED) for processes in main memory. <br> <br>
+<br>
